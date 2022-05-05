@@ -1,23 +1,23 @@
 import React from 'react'
+import Logo from '../assets/img/Logo.JPG'
 
 const Header = () => {
     return(
         <header>
             <div className="container mx-auto flex p-5 flex-col md:flex-row items-center">
-                <a className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0' href="http://google.com">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-10 h-10 text-white p-2 bg-orange-500 rounded-full"
-                        viewBox="0 0 24 24"
-                    >
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
+                <a className='flex items-center mb-4 md:mb-0 p-3 w-48 h-48 ' href="http://google.com">
+                    <img src={Logo} alt="logo" className='rounded-full'/>
                 </a>
+                <span className="ml-3 text-xl font-nunito">Welcome to my First React-TailwindCss Train</span>
+                <nav class="lg:ml-auto lg:mt-4 flex  items-center text-base justify-center">
+                    <a class="mr-5 hover:text-slate-500 hover:text-2xl font-koulen" href="http://google.com">
+                        Login
+                    </a>
+                    <a class="mr-5 hover:text-slate-500 font-koulen" href="http://google.com">
+                        Sign up
+                    </a>
+                </nav>
+                <button className="w-48 sm:mt-4 h-14 rounded border-none bg-indigo-500 ...">Go to...</button>
             </div>
         </header>
     );
